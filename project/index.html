@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and Registration</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>logo.</p>
+        </div>
+        <div class="nav-menu"   id="navmanu">
+            <ul>
+                <li><a href="" class="link active">home</a></li>
+                <li><a href="" class="link">bloge</a></li>
+                <li><a href="" class="link">services</a></li>
+                <li><a href="" class="link">about</a></li>
+               
+
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class=" white-btn"  id="loginbtn" onclick="login()">sing in</button>
+            <button class="btn"  id="Registerbtn" onclick="register()">sing up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="mymenufunction()"></i>
+        </div>
+    </nav>
+    <!------------form box------------>
+    <din class="form-box">
+        <!---------------- login form ----------->
+        <div class="login-container" id="login">
+            <div class="top">
+               <span> Don't have an accoun? <a href="#" onclick="register()">sing up</a></span>
+               <header>login</header>
+           </div>
+           
+               <div class="input-box">
+                   <input type="text" class="input-field" placeholder=" username  or email">
+                   <i class="bx bx-user"></i>  
+               </div>
+               <div class="input-box">
+                   <input type="text" class="input-field" placeholder="password">
+                   <i class="bx bx-lock-alt"></i>  
+               </div>
+               <div class="input-box">
+                   <input type="submit" class="submit" value="sign in">
+                     
+               </div>
+               <div class="two-col">
+                   <div class="one">
+                       <input type="checkbox" id="login-check">
+                       <label for="login-check">remember me</label>
+
+                   </div>
+                   <div class="two">
+                       <label><a href="#">porgot password?</a></label>
+                   </div>
+               </div>
+           
+       </div>
+        <!---------------- registration form ----------->
+        <div class="register-container" id="register">
+             <div class="top">
+                <span>have an accoun? <a href="#" onclick="login()">login</a></span>
+                <header>sign up</header>
+            </div>
+            <div class="two-form"> 
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="lasname">
+                    <i class="bx bx-user"></i>  
+                </div>
+            </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="email">
+                    <i class="bx bx-envelope"></i>  
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="password">
+                    <i class="bx bx-lock-alt"></i>  
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="register">
+                      
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">remember me</label>
+
+                    </div>
+                    <div class="two">
+                        <label><a href="#">terms & comdotions</a></label>
+                    </div>
+                </div>
+            
+        </div>
+    </din>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
